@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Orbit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <title>weddingKiosk</title>
+    <style>
+       * { 
+            margin: 0; padding: 0; font-size: 10px; 
+            font-family: "Nanum Myeongjo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        html, body { width: 192rem; height: 108rem; margin: auto;}
+        .parkingPageFrame { /*주차권 타이틀*/
+            width: 100%;
+            height: 100%;
+            background-color: #f5eee6;
+        }
+        .parkingTitle { /*주차권 출력하기 타이틀*/
+            font-size: 5rem;
+            padding: 4rem;            
+        }
+
+        .parkingPrintBtn { /*주차권 출력하는 버튼*/
+            width: 40rem;
+            height: 15rem;
+            margin-left: 4rem;
+            border-radius: 20rem;
+            font-size: 8rem;
+        }
+        .parkingPrintBtn img {
+            width: 9rem;
+            height: 9rem;
+        }
+
+            .parkingImgFrame {
+                text-align: center;
+                margin-top: 2rem;
+                padding: 2rem;
+
+            }
+
+            .parkingImgFrame img {
+                animation: move 5s linear infinite;
+            }
+
+            @keyframes move {
+                0% { transform: translate(30%) };
+                100% { transform: translate(120%)};
+            }
+
+
+</style> 
+<body>
+    <main class="parkingPageFrame">
+        <h1 class="parkingTitle">주차권 출력하기</h3>
+        <button class="parkingPrintBtn">Print&nbsp;<img src="kiosk/parkingprint.png"></button>
+        <div class="parkingImgFrame">
+            <img src="kiosk/parking.png">
+        </div>
+    </main>
+<script>
+
+</script>    
+</body>
+</head>
+</html>
+
